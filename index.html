@@ -6,10 +6,34 @@
   <!-- Use local Chart.js file instead of CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
-    ul { list-style: none; padding: 0; }
-    li { cursor: pointer; margin: 5px 0; padding: 5px; background: #f0f0f0; width: max-content; }
-    li:hover { background: #d0e0ff; }
-    canvas { max-width: 400px; max-height: 300px; }
+    /* Grid layout for player list */
+    #player-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    #player-list li {
+      list-style: none;
+      cursor: pointer;
+      padding: 10px;
+      background: #f0f0f0;
+      text-align: center;
+      border-radius: 5px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    #player-list li:hover {
+      background: #d0e0ff;
+      transform: scale(1.05);
+    }
+
+    canvas {
+      max-width: 400px;
+      max-height: 300px;
+    }
   </style>
 </head>
 <body>
@@ -18,64 +42,59 @@
   <ul id="player-list"></ul>
 
   <h2>ELO Progression</h2>
-  <canvas id="eloChart" width="900" height="900"></canvas>
+  <canvas id="eloChart" width="400" height="300"></canvas>
 
   <script>
-    let data; // will hold JSON data
+    const data = [
+      ["Rysanek Jakub", {"elo": 1351.487, "game_hist": [["Juhasz Tomas", 1020], ["Dornak Jakub", 1040], ["Durica Adam", 1040]]}],
+      ["Batora Matej", {"elo": 1263.876, "game_hist": [["Do Hung", 1020], ["Jezek Jakub", 1040], ["Siska Kristof", 1020]]}],
+      ["Magnus Carlsen", {"elo": 2862, "game_hist": [["Opponent A", 2800], ["Opponent B", 2820], ["Opponent C", 2850]]}],
+      ["Hikaru Nakamura", {"elo": 2736, "game_hist": [["Opponent X", 2700], ["Opponent Y", 2710], ["Opponent Z", 2730]]}],
+      ["Alireza Firouzja", {"elo": 2793, "game_hist": [["Opponent 1", 2750], ["Opponent 2", 2760], ["Opponent 3", 2780]]}]
+    ];
 
-    // Load JSON file
-    fetch('data.json')
-      .then(response => response.json())
-      .then(json => {
-        data = json; // assign JSON content to variable
-        initialize(); // initialize list and chart after loading
-      })
-      .catch(err => console.error("Failed to load JSON:", err));
+    const list = document.getElementById('player-list');
 
-    function initialize() {
-      const list = document.getElementById('player-list');
+    // Populate clickable player grid
+    data.forEach((playerEntry, index) => {
+      const [name, info] = playerEntry;
+      const li = document.createElement('li');
+      li.textContent = `${name}: ${info.elo.toFixed(1)}`;
+      li.addEventListener('click', () => updateChart(index));
+      list.appendChild(li);
+    });
 
-      // Populate clickable player list
-      data.forEach((playerEntry, index) => {
-        const [name, info] = playerEntry;
-        const li = document.createElement('li');
-        li.textContent = `${name}: ${info.elo.toFixed(1)}`;
-        li.addEventListener('click', () => updateChart(index));
-        list.appendChild(li);
-      });
-
-      // Initialize Chart.js with first player
-      const ctx = document.getElementById('eloChart').getContext('2d');
-      const firstPlayer = data[0];
-      let chart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: firstPlayer[1].game_hist.map((_, i) => `Game ${i+1}`),
-          datasets: [{
-            label: `${firstPlayer[0]} ELO`,
-            data: firstPlayer[1].game_hist.map(game => game[1]),
-            borderColor: 'blue',
-            fill: false
-          }]
-        },
-        options: {
-          responsive: false,
-          plugins: {
-            tooltip: {
-              callbacks: {
-                label: function(context) {
-                  const playerIndex = data.findIndex(p => `${p[0]} ELO` === context.dataset.label);
-                  const opponent = data[playerIndex][1].game_hist[context.dataIndex][0];
-                  const elo = context.raw;
-                  return `${opponent}: ${elo.toFixed(1)}`;
-                }
+    // Initialize Chart.js
+    const ctx = document.getElementById('eloChart').getContext('2d');
+    const firstPlayer = data[0];
+    let chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: firstPlayer[1].game_hist.map((_, i) => `Game ${i+1}`),
+        datasets: [{
+          label: `${firstPlayer[0]} ELO`,
+          data: firstPlayer[1].game_hist.map(game => game[1]),
+          borderColor: 'blue',
+          fill: false
+        }]
+      },
+      options: {
+        responsive: false,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                const playerIndex = data.findIndex(p => `${p[0]} ELO` === context.dataset.label);
+                const opponent = data[playerIndex][1].game_hist[context.dataIndex][0];
+                const elo = context.raw;
+                return `${opponent}: ${elo.toFixed(1)}`;
               }
             }
-          },
-          scales: { y: { beginAtZero: false } }
-        }
-      });
-    }
+          }
+        },
+        scales: { y: { beginAtZero: false } }
+      }
+    });
 
     function updateChart(playerIndex) {
       const [name, info] = data[playerIndex];
