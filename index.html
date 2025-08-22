@@ -15,20 +15,18 @@
       margin-bottom: 20px;
     }
 
-   /* Two-column layout */
+    /* Two-column layout */
     #container {
       display: flex;
-      align-items: flex-start; /* prevent stretch */
-      gap: 40px;               /* spacing between players and chart */
+      gap: 20px;
     }
 
     /* Left side: player grid */
     #player-list {
-      flex: 1;
-      max-width: 800px;   /* keep it from getting too wide */
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 10px;
+      flex: 1;
     }
 
     .player-card {
@@ -48,14 +46,14 @@
 
     /* Right side: chart */
     #chart-container {
-      width: 800px;
-      position: sticky;
-      top: 20px;
+      width: 80%; /* small fixed width */
+      position: sticky;   /* stick within the viewport */
+      top: 20px;          /* always 20px from top when scrolling */
+      align-self: flex-start;
     }
 
     canvas {
-      max-width: 800px;
-      max-height: 600px;
+      max-width: 80%;
     }
   </style>
 </head>
@@ -68,7 +66,7 @@
 
     <!-- Chart on the right -->
     <div id="chart-container">
-      <canvas id="eloChart" width="800" height="600"></canvas>
+      <canvas id="eloChart" width="400" height="300"></canvas>
     </div>
   </div>
 
