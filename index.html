@@ -193,7 +193,7 @@
 
     function updateChart(playerIndex) {
       const [name, info] = data[playerIndex];
-      chart.data.labels = info.game_hist.map((_, i) => `Game ${i+1}`);
+      chart.data.labels = info.game_hist.map((_, i) => `Hra ${i+1}`);
       chart.data.datasets[0].label = `${name} ELO`;
       chart.data.datasets[0].data = info.game_hist.map(game => game[1]);
       chart.update();
@@ -224,7 +224,7 @@
         if (url) {
           const link = document.createElement('a');
           link.href = url;
-          link.textContent = "Tournament";
+          link.textContent = "Turnaj";
           link.target = "_blank";
           link.className = "tournament-link";
           li.appendChild(link);
