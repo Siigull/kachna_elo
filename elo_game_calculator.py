@@ -16,9 +16,9 @@ for index, [white, black, result] in df.iterrows():
     dif = 1 / (1 + 10**((players[white]["elo"] - players[black]["elo"]) / 400))
     elo_calc = 40 * (res - dif)
     players[white]["elo"] += elo_calc
-    players[white]["game_hist"].append([black, players[white]["elo"]])
+    players[white]["game_hist"].append([black, players[white]["elo"], "white"])
     players[black]["elo"] -= elo_calc
-    players[black]["game_hist"].append([white, players[black]["elo"]])
+    players[black]["game_hist"].append([white, players[black]["elo"], "black"])
 
 sorted_players = sorted(players.items(), key=lambda x: x[1]["elo"], reverse=True)
 

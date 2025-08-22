@@ -181,7 +181,11 @@
 
       info.game_hist.forEach((game, i) => {
         const li = document.createElement('li');
-        li.textContent = `Game ${i+1}: vs ${game[0]} → ELO: ${game[1].toFixed(1)}`;
+        if(game[2] == "white"){
+          li.textContent = `${name} vs ${game[0]} → ${game[1].toFixed(1)}`;
+        } else {
+          li.textContent = `${game[0]} vs ${name} → ${game[1].toFixed(1)}`;
+        }
         historyList.appendChild(li);
       });
     }
