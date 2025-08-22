@@ -24,7 +24,7 @@ Benes David;Durica Adam;0
 Krena Bohuslav;Valent Tomas;1.0
 Batora Matej;Jezek Jakub;1.0
 Yaroshenko Oleksandr;Juhasz Tomas;0
-Slavik Samuel;Do Hung;1
+Slavik Samuel;Do Hung;0.5
 Mikus Andrej;Kuna Martin;1
 Vano Pavol Toth;Hornik Matej;0
 Kuzel Marek;Radsetoulal Vlastimil;0.0
@@ -33,7 +33,7 @@ Prokop Jiri;Nekula Stepan;1.0
 Hanus Michal;Uhricek Daniel;0.5
 Andrukhiv Dmytro;Tenora Marek;1.0
 
-Durica Adam;Rysanek Jakub;1
+Durica Adam;Rysanek Jakub;0.5
 Dornak Jakub;Havelka Ondrej;0
 Matus Filip;Krena Bohuslav;1.0
 Rucek Peter;Mikus Andrej;1.0
@@ -65,12 +65,12 @@ Slavik Samuel;Valent Tomas;0.0
 Andrukhiv Dmytro;Vojtechovsky Michal;0
 Vano Pavol Toth;Uhricek Daniel;0.0
 Hanus Michal;Nekula Stepan;1.0
-Tenora Marek;Yaroshenko Oleksandr;1
+Tenora Marek;Yaroshenko Oleksandr;0.5
 
-Rucek Peter;Rysanek Jakub;1
+Rucek Peter;Rysanek Jakub;0.5
 Siska Kristof;Havelka Ondrej;0
 Durica Adam;Matus Filip;0
-Kuna Martin;Krena Bohuslav;1
+Kuna Martin;Krena Bohuslav;0.5
 Juhasz Tomas;Batora Matej;0
 Prokop Jiri;Benes David;0
 Do Hung;Jezek Jakub;1.0
@@ -86,7 +86,7 @@ Nekula Stepan;Tenora Marek;1.0
 
 Rysanek Jakub;Matus Filip;1.0
 Havelka Ondrej;Kuna Martin;1.0
-Batora Matej;Rucek Peter;1
+Batora Matej;Rucek Peter;0.5
 Hornik Matej;Siska Kristof;0
 Mikus Andrej;Durica Adam;0
 Krena Bohuslav;Do Hung;1.0
@@ -107,7 +107,7 @@ Matus Filip;Batora Matej;1.0
 Siska Kristof;Benes David;0.5
 Durica Adam;Trombik Daniel;1.0
 Valent Tomas;Juhasz Tomas;0
-Kuna Martin;Do Hung;1
+Kuna Martin;Do Hung;0.5
 Uhricek Daniel;Hornik Matej;0
 Slavik Samuel;Roman Filip;0
 Vojtechovsky Michal;Kuzel Marek;0
@@ -153,7 +153,7 @@ Varsanyi Adam;Holop Patrik;0.0
 Bobor Dominik;Matuska Miloslav;1.0
 
 Batora Matej;Straka Vojtech;0.0
-Shelest Oleksii;Lintner Igor;1
+Shelest Oleksii;Lintner Igor;0.5
 Husek Martin;Rucek Peter;1.0
 Bango Dominik;Sramek Vojtech;0
 Holop Patrik;Hornik Matej;0
@@ -172,10 +172,10 @@ Matuska Miloslav;Just Vojtech;1.0
 
 Shelest Oleksii;Batora Matej;0
 Straka Vojtech;Lintner Igor;0
-Sramek Vojtech;Husek Martin;1
+Sramek Vojtech;Husek Martin;0.5
 Hornik Matej;Vojtechovsky Michal;1.0
 Pelanek Daniel;Bango Dominik;0
-Zilinek Tomas;Jancovicova Petra;1
+Zilinek Tomas;Jancovicova Petra;0.5
 Havelka Ondrej;Mateas Branislav;1.0
 Rucek Peter;Gvozdjak Peter;1.0
 Bridl Dominik;Matuska Miloslav;1.0
@@ -195,7 +195,7 @@ Bango Dominik;Straka Vojtech;0
 Jancovicova Petra;Hornik Matej;0
 Zilinek Tomas;Shelest Oleksii;0
 Gvozdjak Peter;Radsetoulal Vlastimil;1.0
-Majer Jakub;Bridl Dominik;1
+Majer Jakub;Bridl Dominik;0.5
 Ergang Martin;Pelanek Daniel;0.0
 Mateas Branislav;Vojtechovsky Michal;1
 Prokop Jiri;Badura Richard;0
@@ -209,7 +209,7 @@ Malik Viktor;Just Vojtech;1
 Gvozdjak Peter;Batora Matej;0
 Rucek Peter;Lintner Igor;1
 Shelest Oleksii;Husek Martin;0
-Havelka Ondrej;Sramek Vojtech;1
+Havelka Ondrej;Sramek Vojtech;0.5
 Straka Vojtech;Hornik Matej;1.0
 Varsanyi Adam;Bango Dominik;0
 Majer Jakub;Jancovicova Petra;0
@@ -254,21 +254,21 @@ Shelest Oleksii;Ergang Martin;1.0
 Gvozdjak Peter;Badura Richard;1.0
 Kuznik Jakub;Zilinek Tomas;0
 Vojtechovsky Michal;Majer Jakub;1.0
-Kravar Peter;Buch Marek;1
+Kravar Peter;Buch Marek;0.5
 Hromada Denis;Pelanek Daniel;1
 Varsanyi Adam;Radsetoulal Vlastimil;1.0
 Saskova Renata;Benovic Martin;0
 Prokop Jiri;Zavadil Tomas;1.0
 Bobor Dominik;Holop Patrik;1.0
 Malik Viktor;Matuska Miloslav;0
-Stetina Jakub;Just Vojtech;1
+Stetina Jakub;Just Vojtech;0.5
 
 Batora Matej;Sramek Vojtech;1.0
 Hornik Matej;Lintner Igor;0
 Husek Martin;Straka Vojtech;1.0
 Bango Dominik;Gvozdjak Peter;1.0
 Jancovicova Petra;Rucek Peter;1.0
-Bridl Dominik;Shelest Oleksii;1
+Bridl Dominik;Shelest Oleksii;0.5
 Havelka Ondrej;Hromada Denis;1.0
 Zilinek Tomas;Varsanyi Adam;1.0
 Ergang Martin;Mateas Branislav;1.0
@@ -387,7 +387,7 @@ Hartingerova Martina;Huska Jan;0
 Krakovsky Matej;Pelanek Daniel;1.0
 Perecz Mario;Tulis Jan;0
 Synek Jaroslav;Valent Tomas;1.0
-Kostelnik Martin;Buch Marek;1
+Kostelnik Martin;Buch Marek;0.5
 Bures Lukas;Prc Daniel;0
 Petrisakova Katarina;Kromp Milos;1.0
 Vitek Tomas;Fojtik Jakub;0
@@ -417,7 +417,7 @@ Varsanyi Adam;Cernicky Martin;1.0
 Sramek Vojtech;Ergang Martin;1.0
 Rysanek Jakub;Kuznik Jakub;1.0
 Batora Matej;Synek Jaroslav;1.0
-Medek Radovan;Vaculik Martin;1
+Medek Radovan;Vaculik Martin;0.5
 Eaint Myat Noe;Kriz Tomas;0
 Juriga Tomas;Perecz Mario;1.0
 Roman Filip;Kuna Martin;0
@@ -454,7 +454,7 @@ Vojtechovsky Michal;Eaint Myat Noe;1.0
 
 Sramek Vojtech;Rysanek Jakub;1.0
 Batora Matej;Juriga Tomas;1.0
-Kuna Martin;Vaculik Martin;1
+Kuna Martin;Vaculik Martin;0.5
 Ergang Martin;Kriz Tomas;0
 Zabloudil Radek;Synek Jaroslav;0.0
 Jezek Jakub;Krena Bohuslav;0
@@ -463,7 +463,7 @@ Lanca Petr David;Chovan Samuel;0
 Ivanecka Natalia;Kuznik Jakub;1.0
 Pecenka Petr;Zitny Michal;0
 Kostura Daniel;Pelanek Daniel;0.0
-Vondrejc Tomas;Hung Do;1
+Vondrejc Tomas;Hung Do;0.5
 Stefan Matej;Benes David;0
 Roman Filip;Perecz Mario;1.0
 Takacs Martin;Kromp Milos;1
@@ -471,7 +471,7 @@ Radsetoulal Vlastimil;Penas Jakub;0
 Medek Radovan;Vojtechovsky Michal;1.0
 Eaint Myat Noe;Schwarz Ondrej;0.0
 
-Krena Bohuslav;Sramek Vojtech;1
+Krena Bohuslav;Sramek Vojtech;0.5
 Rysanek Jakub;Zitny Michal;1.0
 Shelest Oleksii;Batora Matej;0
 Vaculik Martin;Jezek Jakub;1.0
@@ -512,7 +512,7 @@ Rysanek Jakub;Batora Matej;1.0
 Vaculik Martin;Shelest Oleksii;0.5
 Kuznik Jakub;Juriga Tomas;0
 Ergang Martin;Chovan Samuel;1.0
-Krena Bohuslav;Kuna Martin;1
+Krena Bohuslav;Kuna Martin;0.5
 Zabloudil Radek;Jezek Jakub;1.0
 Zitny Michal;Ivanecka Natalia;0
 Jordanov Mihail;Vondrejc Tomas;1.0
@@ -544,7 +544,7 @@ Eaint Myat Noe;Penas Jakub;0
 Medek Radovan;Schwarz Ondrej;1.0
 
 Osicka Premysl;Radimsky Simon;1.0
-Chmelar Jaroslav;Juriga Tomas;1
+Chmelar Jaroslav;Juriga Tomas;0.5
 Ivanecka Natalia;Brazda Jan;1.0
 Chovan Samuel;Doshin Nikita;1.0
 Holba Josef;Penas Jakub;1.0
@@ -571,7 +571,7 @@ Chovan Samuel;Brazda Jan;1.0
 Kovarik David;Holba Josef;0
 Pelanek Daniel;Solar Lukas;1
 Perecz Mario;Synek Jaroslav;0
-Kromp Milos;Kostura Daniel;1
+Kromp Milos;Kostura Daniel;0.5
 Varsanyi Adam;Chmelar Jaroslav;0
 Penas Jakub;Doshin Nikita;0
 Kvapil Jan;Radimsky Simon;0
@@ -590,7 +590,7 @@ Kvapil Jan;Penas Jakub;1.0
 Kovarik David;Osicka Premysl;0
 Holba Josef;Juriga Tomas;0
 Ivanecka Natalia;Chovan Samuel;1.0
-Perecz Mario;Brazda Jan;1
+Perecz Mario;Brazda Jan;0.5
 Synek Jaroslav;Solar Lukas;0
 Kostura Daniel;Kvapil Jan;1.0
 Chmelar Jaroslav;Pelanek Daniel;1.0

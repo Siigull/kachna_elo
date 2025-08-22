@@ -23,11 +23,11 @@ def parse_result(cell):
         res = 0.5
     else:
         res = float(res)
-    if color == "b":
-        if res == 1:
-            res = 0
-        else:
-            res = 1
+        if color == "b":
+            if res == 1:
+                res = 0
+            else:
+                res = 1
     return opp, color, res
 
 urls = ["https://s2.chess-results.com/tnrWZ.aspx?lan=4&art=4&turdet=YES&SNode=S0&tno=732219",
