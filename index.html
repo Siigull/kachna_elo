@@ -15,6 +15,7 @@
       margin-bottom: 20px;
     }
 
+    /* Two-column layout */
     #container {
       display: flex;
       gap: 20px;
@@ -35,11 +36,9 @@
       top: 20px;
     }
 
-    /* Make canvas fill the container width */
+    /* Remove width/height CSS from canvas */
     canvas {
-      width: 100% !important;
-      height: auto !important;
-      max-height: 300px;
+      display: block;
     }
 
     .player-card {
