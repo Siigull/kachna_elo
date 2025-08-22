@@ -1,0 +1,622 @@
+white;black;white_result
+Rysanek Jakub;Juhasz Tomas;1.0
+Havelka Ondrej;Nekula Stepan;1.0
+Matus Filip;Prokop Jiri;1.0
+Rucek Peter;Hromada Denis;1.0
+Siska Kristof;Kuzel Marek;1.0
+Durica Adam;Andrukhiv Dmytro;1.0
+Krena Bohuslav;Hornik Matej;1.0
+Batora Matej;Do Hung;1.0
+Benes David;Tenora Marek;1.0
+Trombik Daniel;Radsetoulal Vlastimil;1.0
+Kuna Martin;Hanus Michal;1.0
+Roman Filip;Vojtechovsky Michal;1.0
+Slavik Samuel;Jezek Jakub;0.0
+Valent Tomas;Vano Pavol Toth;1.0
+Dornak Jakub;Yaroshenko Oleksandr;1.0
+Uhricek Daniel;Mikus Andrej;0.0
+
+Rysanek Jakub;Dornak Jakub;1.0
+Havelka Ondrej;Matus Filip;0.0
+Rucek Peter;Roman Filip;1.0
+Siska Kristof;Trombik Daniel;1.0
+Durica Adam;Benes David;1.0
+Krena Bohuslav;Valent Tomas;1.0
+Batora Matej;Jezek Jakub;1.0
+Juhasz Tomas;Yaroshenko Oleksandr;1.0
+Do Hung;Slavik Samuel;0.5
+Kuna Martin;Mikus Andrej;0.0
+Hornik Matej;Vano Pavol Toth;1.0
+Kuzel Marek;Radsetoulal Vlastimil;0.0
+Hromada Denis;Vojtechovsky Michal;0.0
+Prokop Jiri;Nekula Stepan;1.0
+Hanus Michal;Uhricek Daniel;0.5
+Andrukhiv Dmytro;Tenora Marek;1.0
+
+Rysanek Jakub;Durica Adam;0.5
+Havelka Ondrej;Dornak Jakub;1.0
+Matus Filip;Krena Bohuslav;1.0
+Rucek Peter;Mikus Andrej;1.0
+Siska Kristof;Batora Matej;1.0
+Benes David;Vojtechovsky Michal;1.0
+Juhasz Tomas;Roman Filip;1.0
+Do Hung;Hanus Michal;1.0
+Trombik Daniel;Valent Tomas;1.0
+Kuna Martin;Andrukhiv Dmytro;1.0
+Hornik Matej;Jezek Jakub;1.0
+Kuzel Marek;Yaroshenko Oleksandr;1.0
+Hromada Denis;Tenora Marek;1.0
+Slavik Samuel;Uhricek Daniel;1.0
+Radsetoulal Vlastimil;Prokop Jiri;1.0
+Vano Pavol Toth;Nekula Stepan;1.0
+
+Rysanek Jakub;Siska Kristof;1.0
+Havelka Ondrej;Durica Adam;1.0
+Matus Filip;Rucek Peter;0.0
+Krena Bohuslav;Mikus Andrej;1.0
+Batora Matej;Radsetoulal Vlastimil;1.0
+Benes David;Juhasz Tomas;0.0
+Do Hung;Trombik Daniel;1.0
+Kuna Martin;Hornik Matej;1.0
+Roman Filip;Prokop Jiri;0.0
+Kuzel Marek;Dornak Jakub;1.0
+Hromada Denis;Jezek Jakub;0.0
+Slavik Samuel;Valent Tomas;0.0
+Vojtechovsky Michal;Andrukhiv Dmytro;1.0
+Vano Pavol Toth;Uhricek Daniel;0.0
+Hanus Michal;Nekula Stepan;1.0
+Yaroshenko Oleksandr;Tenora Marek;0.5
+
+Rysanek Jakub;Rucek Peter;0.5
+Havelka Ondrej;Siska Kristof;1.0
+Matus Filip;Durica Adam;1.0
+Krena Bohuslav;Kuna Martin;0.5
+Batora Matej;Juhasz Tomas;1.0
+Benes David;Prokop Jiri;1.0
+Do Hung;Jezek Jakub;1.0
+Trombik Daniel;Mikus Andrej;1.0
+Hornik Matej;Radsetoulal Vlastimil;1.0
+Roman Filip;Andrukhiv Dmytro;1.0
+Kuzel Marek;Valent Tomas;0.0
+Hromada Denis;Yaroshenko Oleksandr;1.0
+Slavik Samuel;Hanus Michal;1.0
+Vojtechovsky Michal;Uhricek Daniel;1.0
+Dornak Jakub;Vano Pavol Toth;0.0
+Nekula Stepan;Tenora Marek;1.0
+
+Rysanek Jakub;Matus Filip;1.0
+Havelka Ondrej;Kuna Martin;1.0
+Rucek Peter;Batora Matej;0.5
+Siska Kristof;Hornik Matej;1.0
+Durica Adam;Mikus Andrej;1.0
+Krena Bohuslav;Do Hung;1.0
+Benes David;Valent Tomas;1.0
+Juhasz Tomas;Slavik Samuel;0.0
+Trombik Daniel;Vojtechovsky Michal;1.0
+Roman Filip;Vano Pavol Toth;1.0
+Kuzel Marek;Hanus Michal;1.0
+Hromada Denis;Radsetoulal Vlastimil;1.0
+Prokop Jiri;Jezek Jakub;1.0
+Dornak Jakub;Tenora Marek;1.0
+Uhricek Daniel;Andrukhiv Dmytro;1.0
+Nekula Stepan;Yaroshenko Oleksandr;1.0
+
+Rysanek Jakub;Krena Bohuslav;1.0
+Havelka Ondrej;Rucek Peter;1.0
+Matus Filip;Batora Matej;1.0
+Siska Kristof;Benes David;0.5
+Durica Adam;Trombik Daniel;1.0
+Juhasz Tomas;Valent Tomas;1.0
+Do Hung;Kuna Martin;0.5
+Hornik Matej;Uhricek Daniel;1.0
+Roman Filip;Slavik Samuel;1.0
+Kuzel Marek;Vojtechovsky Michal;1.0
+Hromada Denis;Prokop Jiri;1.0
+Radsetoulal Vlastimil;Nekula Stepan;1.0
+Dornak Jakub;Jezek Jakub;1.0
+Vano Pavol Toth;Mikus Andrej;1.0
+Hanus Michal;Tenora Marek;1.0
+Yaroshenko Oleksandr;Andrukhiv Dmytro;1.0
+
+Batora Matej;Bobor Dominik;1.0
+Lintner Igor;Holop Patrik;1.0
+Husek Martin;Gvozdjak Peter;1.0
+Sramek Vojtech;Buch Marek;1.0
+Straka Vojtech;Just Vojtech;1.0
+Hornik Matej;Matuska Miloslav;1.0
+Bango Dominik;Kuznik Jakub;1.0
+Jancovicova Petra;Malik Viktor;1.0
+Shelest Oleksii;Majer Jakub;1.0
+Havelka Ondrej;Badura Richard;1.0
+Rucek Peter;Kravar Peter;1.0
+Bridl Dominik;Vojtechovsky Michal;1.0
+Zilinek Tomas;Mateas Branislav;1.0
+Ergang Martin;Varsanyi Adam;1.0
+Pelanek Daniel;Zavadil Tomas;1.0
+Radsetoulal Vlastimil;Stetina Jakub;1.0
+
+Batora Matej;Hornik Matej;1.0
+Lintner Igor;Ergang Martin;1.0
+Husek Martin;Radsetoulal Vlastimil;1.0
+Sramek Vojtech;Jancovicova Petra;1.0
+Straka Vojtech;Bridl Dominik;1.0
+Bango Dominik;Zilinek Tomas;1.0
+Shelest Oleksii;Havelka Ondrej;1.0
+Rucek Peter;Pelanek Daniel;1.0
+Gvozdjak Peter;Stetina Jakub;1.0
+Vojtechovsky Michal;Just Vojtech;1.0
+Badura Richard;Majer Jakub;1.0
+Buch Marek;Malik Viktor;1.0
+Mateas Branislav;Kuznik Jakub;1.0
+Kravar Peter;Zavadil Tomas;1.0
+Varsanyi Adam;Holop Patrik;0.0
+Bobor Dominik;Matuska Miloslav;1.0
+
+Batora Matej;Straka Vojtech;0.0
+Lintner Igor;Shelest Oleksii;0.5
+Husek Martin;Rucek Peter;1.0
+Sramek Vojtech;Bango Dominik;1.0
+Hornik Matej;Holop Patrik;1.0
+Jancovicova Petra;Bobor Dominik;1.0
+Havelka Ondrej;Buch Marek;1.0
+Gvozdjak Peter;Ergang Martin;1.0
+Bridl Dominik;Pelanek Daniel;0.0
+Zilinek Tomas;Badura Richard;1.0
+Vojtechovsky Michal;Radsetoulal Vlastimil;1.0
+Mateas Branislav;Kravar Peter;1.0
+Majer Jakub;Stetina Jakub;1.0
+Varsanyi Adam;Hromada Denis;1.0
+Prokop Jiri;Kuznik Jakub;0.5
+Zavadil Tomas;Malik Viktor;1.0
+Matuska Miloslav;Just Vojtech;1.0
+
+Batora Matej;Shelest Oleksii;1.0
+Lintner Igor;Straka Vojtech;1.0
+Husek Martin;Sramek Vojtech;0.5
+Hornik Matej;Vojtechovsky Michal;1.0
+Bango Dominik;Pelanek Daniel;1.0
+Jancovicova Petra;Zilinek Tomas;0.5
+Havelka Ondrej;Mateas Branislav;1.0
+Rucek Peter;Gvozdjak Peter;1.0
+Bridl Dominik;Matuska Miloslav;1.0
+Ergang Martin;Kravar Peter;1.0
+Badura Richard;Varsanyi Adam;0.0
+Buch Marek;Zavadil Tomas;0.0
+Majer Jakub;Bobor Dominik;1.0
+Hromada Denis;Kuznik Jakub;1.0
+Prokop Jiri;Just Vojtech;1.0
+Radsetoulal Vlastimil;Holop Patrik;1.0
+Stetina Jakub;Malik Viktor;1.0
+
+Batora Matej;Rucek Peter;0.0
+Lintner Igor;Sramek Vojtech;1.0
+Husek Martin;Havelka Ondrej;0.0
+Straka Vojtech;Bango Dominik;1.0
+Hornik Matej;Jancovicova Petra;1.0
+Shelest Oleksii;Zilinek Tomas;1.0
+Gvozdjak Peter;Radsetoulal Vlastimil;1.0
+Bridl Dominik;Majer Jakub;0.5
+Ergang Martin;Pelanek Daniel;0.0
+Vojtechovsky Michal;Mateas Branislav;0.0
+Badura Richard;Prokop Jiri;1.0
+Buch Marek;Matuska Miloslav;1.0
+Kravar Peter;Holop Patrik;1.0
+Varsanyi Adam;Zavadil Tomas;1.0
+Hromada Denis;Bobor Dominik;1.0
+Kuznik Jakub;Stetina Jakub;1.0
+Just Vojtech;Malik Viktor;0.0
+
+Batora Matej;Gvozdjak Peter;1.0
+Lintner Igor;Rucek Peter;0.0
+Husek Martin;Shelest Oleksii;1.0
+Sramek Vojtech;Havelka Ondrej;0.5
+Straka Vojtech;Hornik Matej;1.0
+Bango Dominik;Varsanyi Adam;1.0
+Jancovicova Petra;Majer Jakub;1.0
+Bridl Dominik;Zilinek Tomas;1.0
+Ergang Martin;Vojtechovsky Michal;1.0
+Badura Richard;Kravar Peter;0.5
+Buch Marek;Radsetoulal Vlastimil;0.0
+Mateas Branislav;Pelanek Daniel;1.0
+Hromada Denis;Zavadil Tomas;1.0
+Benovic Martin;Just Vojtech;1.0
+Prokop Jiri;Bobor Dominik;0.0
+Holop Patrik;Kuznik Jakub;0.0
+Matuska Miloslav;Stetina Jakub;1.0
+Saskova Renata;Malik Viktor;1.0
+
+Batora Matej;Husek Martin;1.0
+Lintner Igor;Havelka Ondrej;1.0
+Sramek Vojtech;Mateas Branislav;1.0
+Straka Vojtech;Rucek Peter;1.0
+Hornik Matej;Bango Dominik;1.0
+Jancovicova Petra;Shelest Oleksii;0.5
+Gvozdjak Peter;Pelanek Daniel;1.0
+Bridl Dominik;Radsetoulal Vlastimil;1.0
+Zilinek Tomas;Majer Jakub;0.5
+Ergang Martin;Hromada Denis;1.0
+Vojtechovsky Michal;Zavadil Tomas;1.0
+Badura Richard;Kuznik Jakub;1.0
+Buch Marek;Bobor Dominik;1.0
+Kravar Peter;Varsanyi Adam;1.0
+Benovic Martin;Malik Viktor;1.0
+Prokop Jiri;Matuska Miloslav;1.0
+Holop Patrik;Stetina Jakub;1.0
+Saskova Renata;Just Vojtech;0.0
+
+Batora Matej;Lintner Igor;1.0
+Husek Martin;Bridl Dominik;1.0
+Sramek Vojtech;Straka Vojtech;1.0
+Hornik Matej;Rucek Peter;1.0
+Bango Dominik;Havelka Ondrej;1.0
+Jancovicova Petra;Mateas Branislav;1.0
+Shelest Oleksii;Ergang Martin;1.0
+Gvozdjak Peter;Badura Richard;1.0
+Zilinek Tomas;Kuznik Jakub;1.0
+Vojtechovsky Michal;Majer Jakub;1.0
+Buch Marek;Kravar Peter;0.5
+Pelanek Daniel;Hromada Denis;0.0
+Varsanyi Adam;Radsetoulal Vlastimil;1.0
+Benovic Martin;Saskova Renata;1.0
+Prokop Jiri;Zavadil Tomas;1.0
+Bobor Dominik;Holop Patrik;1.0
+Matuska Miloslav;Malik Viktor;1.0
+Just Vojtech;Stetina Jakub;0.5
+
+Batora Matej;Sramek Vojtech;1.0
+Lintner Igor;Hornik Matej;1.0
+Husek Martin;Straka Vojtech;1.0
+Bango Dominik;Gvozdjak Peter;1.0
+Jancovicova Petra;Rucek Peter;1.0
+Shelest Oleksii;Bridl Dominik;0.5
+Havelka Ondrej;Hromada Denis;1.0
+Zilinek Tomas;Varsanyi Adam;1.0
+Ergang Martin;Mateas Branislav;1.0
+Vojtechovsky Michal;Kravar Peter;1.0
+Badura Richard;Bobor Dominik;1.0
+Buch Marek;Prokop Jiri;1.0
+Pelanek Daniel;Kuznik Jakub;1.0
+Majer Jakub;Matuska Miloslav;1.0
+Benovic Martin;Radsetoulal Vlastimil;1.0
+Zavadil Tomas;Just Vojtech;1.0
+Holop Patrik;Malik Viktor;1.0
+Saskova Renata;Stetina Jakub;1.0
+
+Kuchar Matej;Buch Marek;1.0
+Rucek Kristian;Holba Josef;1.0
+Rysanek Jakub;Gvozdjak Peter;1.0
+Kucera David;Kromp Milos;1.0
+Kuna Martin;Fojtik Jakub;1.0
+Ibrahim Emad Eldin;Cernicky Martin;1.0
+Huska Jan;Maresova Valentyna Marie;1.0
+Ulcak Michael;Pelanek Daniel;1.0
+Krakovsky Matej;Prc Daniel;1.0
+Shelest Oleksii;Palenik Martin;1.0
+Tulis Jan;Kostelnik Martin;1.0
+Rosecky Patrik;Varsanyi Adam;1.0
+Synek Jaroslav;Roman Filip;1.0
+Vaculik Martin;Jokay David;1.0
+Hartingerova Martina;Perecz Mario;0.0
+Valent Tomas;Stefan Matej;1.0
+Bures Lukas;Vitek Tomas;1.0
+Petrisakova Katarina;Radsetoulal Vlastimil;1.0
+
+Kuchar Matej;Ulcak Michael;1.0
+Rucek Kristian;Shelest Oleksii;1.0
+Rysanek Jakub;Rosecky Patrik;1.0
+Kucera David;Synek Jaroslav;1.0
+Kuna Martin;Valent Tomas;1.0
+Ibrahim Emad Eldin;Krakovsky Matej;0.0
+Gvozdjak Peter;Vitek Tomas;1.0
+Huska Jan;Petrisakova Katarina;1.0
+Holba Josef;Palenik Martin;1.0
+Tulis Jan;Bures Lukas;1.0
+Pelanek Daniel;Buch Marek;0.0
+Vaculik Martin;Perecz Mario;1.0
+Kostelnik Martin;Hartingerova Martina;0.0
+Prc Daniel;Cernicky Martin;1.0
+Fojtik Jakub;Stefan Matej;1.0
+Kromp Milos;Roman Filip;0.0
+Radsetoulal Vlastimil;Maresova Valentyna Marie;1.0
+Varsanyi Adam;Jokay David;1.0
+
+Kuchar Matej;Tulis Jan;1.0
+Rucek Kristian;Vaculik Martin;1.0
+Rysanek Jakub;Kucera David;1.0
+Kuna Martin;Huska Jan;1.0
+Ibrahim Emad Eldin;Holba Josef;1.0
+Gvozdjak Peter;Radsetoulal Vlastimil;1.0
+Ulcak Michael;Krakovsky Matej;1.0
+Shelest Oleksii;Buch Marek;1.0
+Rosecky Patrik;Prc Daniel;1.0
+Pelanek Daniel;Jokay David;1.0
+Synek Jaroslav;Bures Lukas;0.0
+Kostelnik Martin;Varsanyi Adam;1.0
+Hartingerova Martina;Fojtik Jakub;1.0
+Valent Tomas;Petrisakova Katarina;1.0
+Perecz Mario;Roman Filip;1.0
+Palenik Martin;Cernicky Martin;1.0
+Kromp Milos;Stefan Matej;1.0
+Vitek Tomas;Maresova Valentyna Marie;1.0
+
+Kuchar Matej;Rysanek Jakub;1.0
+Rucek Kristian;Kuna Martin;1.0
+Kucera David;Rosecky Patrik;1.0
+Ibrahim Emad Eldin;Hartingerova Martina;1.0
+Gvozdjak Peter;Ulcak Michael;0.0
+Huska Jan;Bures Lukas;1.0
+Krakovsky Matej;Tulis Jan;1.0
+Shelest Oleksii;Perecz Mario;1.0
+Holba Josef;Synek Jaroslav;1.0
+Pelanek Daniel;Fojtik Jakub;1.0
+Vaculik Martin;Valent Tomas;1.0
+Buch Marek;Petrisakova Katarina;0.0
+Kostelnik Martin;Vitek Tomas;1.0
+Prc Daniel;Roman Filip;1.0
+Palenik Martin;Radsetoulal Vlastimil;1.0
+Kromp Milos;Varsanyi Adam;1.0
+Jokay David;Stefan Matej;1.0
+Maresova Valentyna Marie;Cernicky Martin;1.0
+
+Kuchar Matej;Rucek Kristian;1.0
+Rysanek Jakub;Krakovsky Matej;1.0
+Kucera David;Ibrahim Emad Eldin;1.0
+Kuna Martin;Ulcak Michael;0.0
+Gvozdjak Peter;Prc Daniel;1.0
+Huska Jan;Vaculik Martin;0.5
+Shelest Oleksii;Tulis Jan;1.0
+Holba Josef;Perecz Mario;1.0
+Rosecky Patrik;Palenik Martin;1.0
+Pelanek Daniel;Bures Lukas;1.0
+Synek Jaroslav;Radsetoulal Vlastimil;1.0
+Buch Marek;Varsanyi Adam;1.0
+Kostelnik Martin;Valent Tomas;1.0
+Hartingerova Martina;Kromp Milos;1.0
+Petrisakova Katarina;Fojtik Jakub;0.0
+Roman Filip;Maresova Valentyna Marie;1.0
+Vitek Tomas;Jokay David;1.0
+Stefan Matej;Cernicky Martin;0.0
+
+Kuchar Matej;Kucera David;1.0
+Rucek Kristian;Ulcak Michael;1.0
+Rysanek Jakub;Shelest Oleksii;1.0
+Kuna Martin;Holba Josef;1.0
+Ibrahim Emad Eldin;Vaculik Martin;1.0
+Gvozdjak Peter;Rosecky Patrik;1.0
+Huska Jan;Hartingerova Martina;1.0
+Krakovsky Matej;Pelanek Daniel;1.0
+Tulis Jan;Perecz Mario;1.0
+Synek Jaroslav;Valent Tomas;1.0
+Buch Marek;Kostelnik Martin;0.5
+Prc Daniel;Bures Lukas;1.0
+Petrisakova Katarina;Kromp Milos;1.0
+Fojtik Jakub;Vitek Tomas;1.0
+Palenik Martin;Roman Filip;1.0
+Radsetoulal Vlastimil;Varsanyi Adam;1.0
+Jokay David;Cernicky Martin;1.0
+Maresova Valentyna Marie;Stefan Matej;0.5
+
+Kuchar Matej;Huska Jan;1.0
+Rucek Kristian;Rysanek Jakub;1.0
+Kucera David;Ulcak Michael;1.0
+Kuna Martin;Krakovsky Matej;1.0
+Ibrahim Emad Eldin;Shelest Oleksii;1.0
+Gvozdjak Peter;Kostelnik Martin;1.0
+Holba Josef;Prc Daniel;1.0
+Tulis Jan;Palenik Martin;1.0
+Rosecky Patrik;Petrisakova Katarina;1.0
+Pelanek Daniel;Hartingerova Martina;1.0
+Synek Jaroslav;Fojtik Jakub;1.0
+Buch Marek;Roman Filip;1.0
+Valent Tomas;Vitek Tomas;1.0
+Bures Lukas;Jokay David;1.0
+Perecz Mario;Radsetoulal Vlastimil;1.0
+Kromp Milos;Maresova Valentyna Marie;1.0
+Varsanyi Adam;Cernicky Martin;1.0
+
+Sramek Vojtech;Ergang Martin;1.0
+Rysanek Jakub;Kuznik Jakub;1.0
+Batora Matej;Synek Jaroslav;1.0
+Vaculik Martin;Medek Radovan;0.5
+Kriz Tomas;Eaint Myat Noe;1.0
+Juriga Tomas;Perecz Mario;1.0
+Kuna Martin;Roman Filip;1.0
+Zabloudil Radek;Kromp Milos;1.0
+Krena Bohuslav;Lanca Petr David;1.0
+Shelest Oleksii;Pecenka Petr;1.0
+Chovan Samuel;Penas Jakub;1.0
+Jezek Jakub;Stefan Matej;1.0
+Ivanecka Natalia;Pelanek Daniel;1.0
+Jordanov Mihail;Radsetoulal Vlastimil;1.0
+Zitny Michal;Schwarz Ondrej;1.0
+Kostura Daniel;Vojtechovsky Michal;1.0
+Hung Do;Takacs Martin;1.0
+Benes David;Vondrejc Tomas;1.0
+
+Sramek Vojtech;Chovan Samuel;1.0
+Rysanek Jakub;Hung Do;1.0
+Batora Matej;Zitny Michal;1.0
+Vaculik Martin;Kostura Daniel;1.0
+Kriz Tomas;Jezek Jakub;0.0
+Juriga Tomas;Kuna Martin;1.0
+Ergang Martin;Medek Radovan;1.0
+Zabloudil Radek;Jordanov Mihail;0.0
+Krena Bohuslav;Ivanecka Natalia;1.0
+Shelest Oleksii;Benes David;1.0
+Lanca Petr David;Perecz Mario;1.0
+Kuznik Jakub;Schwarz Ondrej;1.0
+Synek Jaroslav;Penas Jakub;1.0
+Roman Filip;Stefan Matej;0.0
+Pecenka Petr;Takacs Martin;1.0
+Pelanek Daniel;Radsetoulal Vlastimil;1.0
+Kromp Milos;Vondrejc Tomas;0.0
+Vojtechovsky Michal;Eaint Myat Noe;1.0
+
+Sramek Vojtech;Rysanek Jakub;1.0
+Batora Matej;Juriga Tomas;1.0
+Vaculik Martin;Kuna Martin;0.5
+Kriz Tomas;Ergang Martin;1.0
+Zabloudil Radek;Synek Jaroslav;0.0
+Krena Bohuslav;Jezek Jakub;1.0
+Shelest Oleksii;Jordanov Mihail;1.0
+Chovan Samuel;Lanca Petr David;1.0
+Ivanecka Natalia;Kuznik Jakub;1.0
+Zitny Michal;Pecenka Petr;1.0
+Kostura Daniel;Pelanek Daniel;0.0
+Hung Do;Vondrejc Tomas;0.5
+Benes David;Stefan Matej;1.0
+Roman Filip;Perecz Mario;1.0
+Kromp Milos;Takacs Martin;0.0
+Penas Jakub;Radsetoulal Vlastimil;1.0
+Medek Radovan;Vojtechovsky Michal;1.0
+Eaint Myat Noe;Schwarz Ondrej;0.0
+
+Sramek Vojtech;Krena Bohuslav;0.5
+Rysanek Jakub;Zitny Michal;1.0
+Batora Matej;Shelest Oleksii;1.0
+Vaculik Martin;Jezek Jakub;1.0
+Kriz Tomas;Benes David;1.0
+Juriga Tomas;Jordanov Mihail;1.0
+Ergang Martin;Schwarz Ondrej;1.0
+Kuna Martin;Vondrejc Tomas;1.0
+Zabloudil Radek;Roman Filip;1.0
+Chovan Samuel;Pelanek Daniel;1.0
+Ivanecka Natalia;Synek Jaroslav;1.0
+Kostura Daniel;Penas Jakub;1.0
+Hung Do;Medek Radovan;1.0
+Lanca Petr David;Vojtechovsky Michal;1.0
+Kuznik Jakub;Pecenka Petr;1.0
+Kromp Milos;Stefan Matej;1.0
+Radsetoulal Vlastimil;Perecz Mario;1.0
+
+Sramek Vojtech;Shelest Oleksii;0.5
+Rysanek Jakub;Ivanecka Natalia;1.0
+Batora Matej;Krena Bohuslav;1.0
+Vaculik Martin;Juriga Tomas;1.0
+Kriz Tomas;Chovan Samuel;1.0
+Ergang Martin;Jordanov Mihail;1.0
+Kuna Martin;Hung Do;1.0
+Zabloudil Radek;Benes David;1.0
+Jezek Jakub;Lanca Petr David;1.0
+Zitny Michal;Synek Jaroslav;1.0
+Kostura Daniel;Kuznik Jakub;0.0
+Roman Filip;Medek Radovan;1.0
+Pecenka Petr;Penas Jakub;1.0
+Pelanek Daniel;Vondrejc Tomas;0.0
+Kromp Milos;Vojtechovsky Michal;1.0
+Radsetoulal Vlastimil;Schwarz Ondrej;1.0
+Stefan Matej;Eaint Myat Noe;0.0
+
+Sramek Vojtech;Kriz Tomas;1.0
+Rysanek Jakub;Batora Matej;1.0
+Vaculik Martin;Shelest Oleksii;0.5
+Juriga Tomas;Kuznik Jakub;1.0
+Ergang Martin;Chovan Samuel;1.0
+Kuna Martin;Krena Bohuslav;0.5
+Zabloudil Radek;Jezek Jakub;1.0
+Ivanecka Natalia;Zitny Michal;1.0
+Jordanov Mihail;Vondrejc Tomas;1.0
+Kostura Daniel;Hung Do;1.0
+Lanca Petr David;Radsetoulal Vlastimil;0.5
+Synek Jaroslav;Eaint Myat Noe;1.0
+Benes David;Pecenka Petr;1.0
+Roman Filip;Pelanek Daniel;1.0
+Kromp Milos;Medek Radovan;1.0
+Penas Jakub;Stefan Matej;1.0
+Perecz Mario;Schwarz Ondrej;1.0
+
+Sramek Vojtech;Batora Matej;1.0
+Rysanek Jakub;Vaculik Martin;0.5
+Kriz Tomas;Ivanecka Natalia;1.0
+Juriga Tomas;Krena Bohuslav;1.0
+Ergang Martin;Shelest Oleksii;1.0
+Kuna Martin;Zabloudil Radek;0.5
+Chovan Samuel;Benes David;1.0
+Jezek Jakub;Kuznik Jakub;1.0
+Jordanov Mihail;Synek Jaroslav;1.0
+Zitny Michal;Roman Filip;1.0
+Kostura Daniel;Kromp Milos;1.0
+Hung Do;Radsetoulal Vlastimil;1.0
+Lanca Petr David;Vondrejc Tomas;1.0
+Pecenka Petr;Vojtechovsky Michal;1.0
+Pelanek Daniel;Perecz Mario;1.0
+Penas Jakub;Eaint Myat Noe;1.0
+Medek Radovan;Schwarz Ondrej;1.0
+
+Osicka Premysl;Radimsky Simon;1.0
+Juriga Tomas;Chmelar Jaroslav;0.5
+Ivanecka Natalia;Brazda Jan;1.0
+Chovan Samuel;Doshin Nikita;1.0
+Holba Josef;Penas Jakub;1.0
+Kovarik David;Kromp Milos;1.0
+Solar Lukas;Perecz Mario;0.0
+Synek Jaroslav;Varsanyi Adam;1.0
+Kostura Daniel;Pelanek Daniel;0.0
+Benovic Martin;Kvapil Jan;1.0
+
+Osicka Premysl;Chovan Samuel;1.0
+Juriga Tomas;Perecz Mario;1.0
+Ivanecka Natalia;Holba Josef;0.0
+Brazda Jan;Penas Jakub;1.0
+Kovarik David;Pelanek Daniel;1.0
+Solar Lukas;Kvapil Jan;1.0
+Synek Jaroslav;Benovic Martin;0.0
+Kostura Daniel;Chmelar Jaroslav;1.0
+Kromp Milos;Radimsky Simon;1.0
+Doshin Nikita;Varsanyi Adam;0.0
+
+Osicka Premysl;Benovic Martin;1.0
+Juriga Tomas;Ivanecka Natalia;0.0
+Chovan Samuel;Brazda Jan;1.0
+Holba Josef;Kovarik David;1.0
+Solar Lukas;Pelanek Daniel;0.0
+Synek Jaroslav;Perecz Mario;1.0
+Kostura Daniel;Kromp Milos;0.5
+Chmelar Jaroslav;Varsanyi Adam;1.0
+Doshin Nikita;Penas Jakub;1.0
+Radimsky Simon;Kvapil Jan;1.0
+
+Osicka Premysl;Holba Josef;1.0
+Juriga Tomas;Kostura Daniel;1.0
+Ivanecka Natalia;Benovic Martin;1.0
+Chovan Samuel;Pelanek Daniel;1.0
+Brazda Jan;Varsanyi Adam;1.0
+Kovarik David;Synek Jaroslav;1.0
+Solar Lukas;Radimsky Simon;1.0
+Chmelar Jaroslav;Kromp Milos;0.0
+Doshin Nikita;Perecz Mario;0.0
+Kvapil Jan;Penas Jakub;1.0
+
+Osicka Premysl;Kovarik David;1.0
+Juriga Tomas;Holba Josef;1.0
+Ivanecka Natalia;Chovan Samuel;1.0
+Brazda Jan;Perecz Mario;0.5
+Solar Lukas;Synek Jaroslav;1.0
+Kostura Daniel;Kvapil Jan;1.0
+Chmelar Jaroslav;Pelanek Daniel;1.0
+Kromp Milos;Benovic Martin;0.0
+Doshin Nikita;Radimsky Simon;1.0
+Varsanyi Adam;Penas Jakub;1.0
+
+Osicka Premysl;Ivanecka Natalia;1.0
+Juriga Tomas;Kovarik David;1.0
+Chovan Samuel;Holba Josef;1.0
+Brazda Jan;Kromp Milos;1.0
+Solar Lukas;Benovic Martin;1.0
+Synek Jaroslav;Kvapil Jan;1.0
+Kostura Daniel;Perecz Mario;1.0
+Chmelar Jaroslav;Doshin Nikita;1.0
+Pelanek Daniel;Varsanyi Adam;1.0
+Radimsky Simon;Penas Jakub;0.0
+
+Osicka Premysl;Juriga Tomas;0.0
+Ivanecka Natalia;Solar Lukas;1.0
+Chovan Samuel;Kostura Daniel;1.0
+Brazda Jan;Chmelar Jaroslav;1.0
+Holba Josef;Benovic Martin;1.0
+Kovarik David;Perecz Mario;1.0
+Synek Jaroslav;Pelanek Daniel;1.0
+Kromp Milos;Penas Jakub;1.0
+Doshin Nikita;Kvapil Jan;1.0
+Varsanyi Adam;Radimsky Simon;0.5
+

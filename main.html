@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chess ELO Tracker</title>
+  <!-- Use local Chart.js file instead of CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    ul { list-style: none; padding: 0; }
+    li { cursor: pointer; margin: 5px 0; padding: 5px; background: #f0f0f0; width: max-content; }
+    li:hover { background: #d0e0ff; }
+    canvas { max-width: 400px; max-height: 300px; }
+  </style>
+</head>
+<body>
+  <h1>Chess Players ELO</h1>
+
+  <ul id="player-list"></ul>
+
+  <h2>ELO Progression</h2>
+  <canvas id="eloChart" width="400" height="300"></canvas>
+
+  <script>
+    let data; // will hold JSON data
+
+    // Load JSON file
+    fetch('data.json')
+      .then(response => response.json())
+      .then(json => {
+        data = json; // assign JSON content to variable
+        initialize(); // initialize list and chart after loading
+      })
+      .catch(err => console.error("Failed to load JSON:", err));
+
+    function initialize() {
+      const list = document.getElementById('player-list');
+
+      // Populate clickable player list
+      data.forEach((playerEntry, index) => {
+        const [name, info] = playerEntry;
+        const li = document.createElement('li');
+        li.textContent = `${name}: ${info.elo.toFixed(1)}`;
+        li.addEventListener('click', () => updateChart(index));
+        list.appendChild(li);
+      });
+
+      // Initialize Chart.js with first player
+      const ctx = document.getElementById('eloChart').getContext('2d');
+      const firstPlayer = data[0];
+      window.chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: firstPlayer[1].game_hist.map((_, i) => `Game ${i+1}`),
+          datasets: [{
+            label: `${firstPlayer[0]} ELO`,
+            data: firstPlayer[1].game_hist.map(game => game[1]),
+            borderColor: 'blue',
+            fill: false
+          }]
+        },
+        options: {
+          responsive: false,
+          scales: { y: { beginAtZero: false } }
+        }
+      });
+    }
+
+    function updateChart(playerIndex) {
+      const [name, info] = data[playerIndex];
+      chart.data.labels = info.game_hist.map((_, i) => `Game ${i+1}`);
+      chart.data.datasets[0].label = `${name} ELO`;
+      chart.data.datasets[0].data = info.game_hist.map(game => game[1]);
+      chart.update();
+    }
+  </script>
+</body>
+</html>
