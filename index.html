@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Chess ELO Tracker</title>
-  <!-- Use local Chart.js file instead of CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     body {
@@ -15,37 +14,33 @@
       margin-bottom: 20px;
     }
 
-    /* Two-column layout */
     #container {
       display: flex;
       gap: 20px;
-      height: 100%; /* optional, full viewport height */
     }
 
-    /* Left side: player grid - 70% */
     #player-list {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 10px;
-      flex: 5; /* 70% */
+      flex: 5;
     }
 
-    /* Right side: chart - 30% */
     #chart-container {
-      flex: 4;              /* 30% width */
+      flex: 4;
       display: flex;
-      justify-content: center; /* horizontal centering */
-      align-items: flex-start; /* align to top, so sticky works */
+      flex-direction: column; /* so history box stacks below chart */
+      align-items: center;
       position: sticky;
-      top: 20px;            /* sticks 20px from the top */
-      height: fit-content;  /* shrink-wrap to chart size */
+      top: 20px;
+      height: fit-content;
     }
-    /* Smaller chart */
+
     canvas {
-      width: 80% !important;   /* shrink relative to container */
+      width: 80% !important;
       height: 80% !important;
-      max-width: 500px;        /* optional cap */
-      max-height: 400px;       /* optional cap */
+      max-width: 500px;
+      max-height: 400px;
     }
 
     .player-card {
@@ -62,26 +57,59 @@
       background: #d0e0ff;
       transform: scale(1.05);
     }
-    </style>
+
+    /* New history box */
+    #game-history {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 500px;
+      background: #fafafa;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    #game-history h2 {
+      margin: 5px 0 10px;
+      font-size: 16px;
+    }
+
+    #game-history ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #game-history li {
+      padding: 5px;
+      border-bottom: 1px solid #eee;
+    }
+
+    #game-history li:last-child {
+      border-bottom: none;
+    }
+  </style>
 </head>
 <body>
   <h1>Chess Players ELO</h1>
 
   <div id="container">
-    <!-- Player grid on the left -->
     <div id="player-list"></div>
 
-    <!-- Chart on the right -->
     <div id="chart-container">
       <canvas id="eloChart" width="500" height="400"></canvas>
+      <div id="game-history">
+        <h2>Game History</h2>
+        <ul id="history-list"></ul>
+      </div>
     </div>
   </div>
 
   <script>
-    let data;  // JSON data
-    let chart; // make chart global
+    let data;
+    let chart;
 
-    // Load JSON
     fetch('data.json')
       .then(res => res.json())
       .then(json => {
@@ -93,7 +121,6 @@
     function initialize() {
       const list = document.getElementById('player-list');
 
-      // Populate player grid
       data.forEach((playerEntry, index) => {
         const [name, info] = playerEntry;
         const div = document.createElement('div');
@@ -103,38 +130,39 @@
         list.appendChild(div);
       });
 
-      // Initialize chart (global now)
       const ctx = document.getElementById('eloChart').getContext('2d');
       const firstPlayer = data[0];
       chart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: firstPlayer[1].game_hist.map((_, i) => `Game ${i+1}`),
-        datasets: [{
-          label: `${firstPlayer[0]} ELO`,
-          data: firstPlayer[1].game_hist.map(game => game[1]),
-          borderColor: 'blue',
-          fill: false
-        }]
-      },
-      options: {
-        responsive: true,   // Chart fills container
-        maintainAspectRatio: false, // Allow stretching to container
-        plugins: {
-          tooltip: {
-            callbacks: {
-              label: function(context) {
-                const playerIndex = data.findIndex(p => `${p[0]} ELO` === context.dataset.label);
-                const opponent = data[playerIndex][1].game_hist[context.dataIndex][0];
-                const elo = context.raw;
-                return `${opponent}: ${elo.toFixed(1)}`;
+        type: 'line',
+        data: {
+          labels: firstPlayer[1].game_hist.map((_, i) => `Game ${i+1}`),
+          datasets: [{
+            label: `${firstPlayer[0]} ELO`,
+            data: firstPlayer[1].game_hist.map(game => game[1]),
+            borderColor: 'blue',
+            fill: false
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const playerIndex = data.findIndex(p => `${p[0]} ELO` === context.dataset.label);
+                  const opponent = data[playerIndex][1].game_hist[context.dataIndex][0];
+                  const elo = context.raw;
+                  return `${opponent}: ${elo.toFixed(1)}`;
+                }
               }
             }
-          }
-        },
-        scales: { y: { beginAtZero: false } }
-      }
-    });
+          },
+          scales: { y: { beginAtZero: false } }
+        }
+      });
+
+      updateHistory(0);
     }
 
     function updateChart(playerIndex) {
@@ -143,6 +171,19 @@
       chart.data.datasets[0].label = `${name} ELO`;
       chart.data.datasets[0].data = info.game_hist.map(game => game[1]);
       chart.update();
+      updateHistory(playerIndex);
+    }
+
+    function updateHistory(playerIndex) {
+      const [name, info] = data[playerIndex];
+      const historyList = document.getElementById('history-list');
+      historyList.innerHTML = ''; // clear old list
+
+      info.game_hist.forEach((game, i) => {
+        const li = document.createElement('li');
+        li.textContent = `Game ${i+1}: vs ${game[0]} → ELO: ${game[1].toFixed(1)}`;
+        historyList.appendChild(li);
+      });
     }
   </script>
 </body>
