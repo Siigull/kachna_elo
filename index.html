@@ -11,11 +11,11 @@
       margin: 20px;
     }
 
-    h1, h2 {
-      margin-bottom: 10px;
+    h1 {
+      margin-bottom: 20px;
     }
 
-    /* Container for two-column layout */
+    /* Two-column layout */
     #container {
       display: flex;
       gap: 20px;
@@ -26,7 +26,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 10px;
-      flex: 1; /* take remaining space */
+      flex: 1;
     }
 
     .player-card {
@@ -46,10 +46,10 @@
 
     /* Right side: chart */
     #chart-container {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      width: 420px; /* small fixed width */
+      position: sticky;   /* stick within the viewport */
+      top: 20px;          /* always 20px from top when scrolling */
+      align-self: flex-start;
     }
 
     canvas {
