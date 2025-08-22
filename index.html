@@ -194,11 +194,28 @@
 
       info.game_hist.forEach((game, i) => {
         const li = document.createElement('li');
-        if(game[2] == "white"){
-          li.textContent = `${name} vs ${game[0]} → ${game[1].toFixed(1)}`;
+        const opponent = game[0];
+        const elo = game[1].toFixed(1);
+        const color = game[2];
+        const url = game[3];
+
+        // Match text
+        let matchText = (color === "white")
+          ? `${name} vs ${opponent} → ${elo}`
+          : `${opponent} vs ${name} → ${elo}`;
+
+        // Tournament link (if present)
+        if (url) {
+          const link = document.createElement('a');
+          link.href = url;
+          link.textContent = " [Tournament]";
+          link.target = "_blank"; // open in new tab
+          li.textContent = matchText;
+          li.appendChild(link);
         } else {
-          li.textContent = `${game[0]} vs ${name} → ${game[1].toFixed(1)}`;
+          li.textContent = matchText;
         }
+
         historyList.appendChild(li);
       });
     }

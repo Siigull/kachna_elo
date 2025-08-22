@@ -39,7 +39,7 @@ urls = ["https://s2.chess-results.com/tnrWZ.aspx?lan=4&art=4&turdet=YES&SNode=S0
 output_file = "tournament_games.txt"
 
 with open(output_file, "a", encoding="utf-8") as f:
-    f.write("white;black;white_result\n")
+    f.write("white;black;white_result;game_url\n")
 
 for url in urls:
     print(url)
@@ -131,10 +131,10 @@ for url in urls:
                         continue
                     if row["Games"][r]["Color"] == "w":
                         f.write(f"{unidecode(player)};{unidecode(game['Opponent'])};"
-                                f"{game['Result']}\n")
+                                f"{game['Result']};{url}\n")
                     else:
                         f.write(f"{unidecode(game['Opponent'])};{unidecode(player)};"
-                                f"{game['Result']}\n")
+                                f"{game['Result']};{url}\n")
                 
                 players_seen.add(player)
             f.write("\n")
