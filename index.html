@@ -15,18 +15,20 @@
       margin-bottom: 20px;
     }
 
-    /* Two-column layout */
+   /* Two-column layout */
     #container {
       display: flex;
-      gap: 20px;
+      align-items: flex-start; /* prevent stretch */
+      gap: 40px;               /* spacing between players and chart */
     }
 
     /* Left side: player grid */
     #player-list {
+      flex: 1;
+      max-width: 800px;   /* keep it from getting too wide */
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 10px;
-      flex: 1;
     }
 
     .player-card {
@@ -46,10 +48,9 @@
 
     /* Right side: chart */
     #chart-container {
-      width: 420px; /* small fixed width */
-      position: sticky;   /* stick within the viewport */
-      top: 20px;          /* always 20px from top when scrolling */
-      align-self: flex-start;
+      width: 420px;
+      position: sticky;
+      top: 20px;
     }
 
     canvas {
