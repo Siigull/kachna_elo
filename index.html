@@ -6,28 +6,50 @@
   <!-- Use local Chart.js file instead of CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
-    /* Grid layout for player list */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+
+    /* Container for two-column layout */
+    #container {
+      display: flex;
+      gap: 20px;
+    }
+
+    /* Left side: player grid */
     #player-list {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 10px;
-      padding: 0;
-      margin-bottom: 20px;
+      flex: 1; /* take remaining space */
     }
 
-    #player-list li {
-      list-style: none;
+    .player-card {
       cursor: pointer;
       padding: 10px;
       background: #f0f0f0;
       text-align: center;
       border-radius: 5px;
       transition: background 0.2s, transform 0.2s;
+      user-select: none;
     }
 
-    #player-list li:hover {
+    .player-card:hover {
       background: #d0e0ff;
       transform: scale(1.05);
+    }
+
+    /* Right side: chart */
+    #chart-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
     }
 
     canvas {
@@ -39,33 +61,35 @@
 <body>
   <h1>Chess Players ELO</h1>
 
-  <ul id="player-list"></ul>
+  <div id="container">
+    <!-- Player grid on the left -->
+    <div id="player-list"></div>
 
-  <h2>ELO Progression</h2>
-  <canvas id="eloChart" width="400" height="300"></canvas>
+    <!-- Chart on the right -->
+    <div id="chart-container">
+      <canvas id="eloChart" width="400" height="300"></canvas>
+    </div>
+  </div>
 
   <script>
-    let data; // will hold JSON data
+    const data = [
+      ["Rysanek Jakub", {"elo": 1351.487, "game_hist": [["Juhasz Tomas", 1020], ["Dornak Jakub", 1040], ["Durica Adam", 1040]]}],
+      ["Batora Matej", {"elo": 1263.876, "game_hist": [["Do Hung", 1020], ["Jezek Jakub", 1040], ["Siska Kristof", 1020]]}],
+      ["Magnus Carlsen", {"elo": 2862, "game_hist": [["Opponent A", 2800], ["Opponent B", 2820], ["Opponent C", 2850]]}],
+      ["Hikaru Nakamura", {"elo": 2736, "game_hist": [["Opponent X", 2700], ["Opponent Y", 2710], ["Opponent Z", 2730]]}],
+      ["Alireza Firouzja", {"elo": 2793, "game_hist": [["Opponent 1", 2750], ["Opponent 2", 2760], ["Opponent 3", 2780]]}]
+    ];
 
-    // Load JSON file
-    fetch('data.json')
-      .then(response => response.json())
-      .then(json => {
-        data = json; // assign JSON content to variable
-        initialize(); // initialize list and chart after loading
-      })
-      .catch(err => console.error("Failed to load JSON:", err));
-
-    function initialize() {
     const list = document.getElementById('player-list');
 
     // Populate clickable player grid
     data.forEach((playerEntry, index) => {
       const [name, info] = playerEntry;
-      const li = document.createElement('li');
-      li.textContent = `${name}: ${info.elo.toFixed(1)}`;
-      li.addEventListener('click', () => updateChart(index));
-      list.appendChild(li);
+      const div = document.createElement('div');
+      div.className = 'player-card';
+      div.textContent = `${name}: ${info.elo.toFixed(1)}`;
+      div.addEventListener('click', () => updateChart(index));
+      list.appendChild(div);
     });
 
     // Initialize Chart.js
@@ -99,7 +123,6 @@
         scales: { y: { beginAtZero: false } }
       }
     });
-  }
 
     function updateChart(playerIndex) {
       const [name, info] = data[playerIndex];
