@@ -59,6 +59,12 @@
       transform: scale(1.05);
     }
 
+    .player-card .elo {
+      font-weight: bold;
+      color: #555;
+      margin-top: 4px;
+    }
+
     /* New history box */
     #game-history {
       margin-top: 20px;
@@ -93,7 +99,7 @@
   </style>
 </head>
 <body>
-  <h1>Chess Players ELO</h1>
+  <h1>Seznam hráčů</h1>
 
   <div id="container">
     <div id="player-list"></div>
@@ -126,7 +132,13 @@
         const [name, info] = playerEntry;
         const div = document.createElement('div');
         div.className = 'player-card';
-        div.textContent = `${name}: ${info.elo.toFixed(1)}`;
+        const nameEl = document.createElement('div');
+        nameEl.textContent = name;
+        const eloEl = document.createElement('div');
+        eloEl.textContent = info.elo.toFixed(1);
+        eloEl.className = 'elo';
+        div.appendChild(nameEl);
+        div.appendChild(eloEl);
         div.addEventListener('click', () => updateChart(index));
         list.appendChild(div);
       });
