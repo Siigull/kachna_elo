@@ -23,6 +23,11 @@ def parse_result(cell):
         res = 0.5
     else:
         res = float(res)
+    if color == "b":
+        if res == 1:
+            res = 0
+        else:
+            res = 1
     return opp, color, res
 
 urls = ["https://s2.chess-results.com/tnrWZ.aspx?lan=4&art=4&turdet=YES&SNode=S0&tno=732219",
@@ -66,7 +71,6 @@ for url in urls:
         except:
             idx = counter
 
-
         name = cols[2]
         index_to_name[idx] = name
 
@@ -89,6 +93,7 @@ for url in urls:
         for r in round_cells:
             parsed = parse_result(r)
             if parsed:
+                # Some games are -0 or -1 in res
                 if parsed == "Pass":
                     games.append({"Pass": True})
 
@@ -114,7 +119,6 @@ for url in urls:
     with open(output_file, "a", encoding="utf-8") as f:
         # detect number of rounds from the first row
         num_rounds = len(df.iloc[0]["Games"])
-        
 
         for r in range(num_rounds):
             players_seen = set() 
@@ -125,8 +129,12 @@ for url in urls:
                 if not row["Games"][r]["Pass"]:
                     if game["Opponent"] in players_seen:
                         continue
-                    f.write(f"{unidecode(player)};{ unidecode(game['Opponent'])};"
-                            f"{game['Result']}\n")
+                    if row["Games"][r]["Color"] == "w":
+                        f.write(f"{unidecode(player)};{unidecode(game['Opponent'])};"
+                                f"{game['Result']}\n")
+                    else:
+                        f.write(f"{unidecode(game['Opponent'])};{unidecode(player)};"
+                                f"{game['Result']}\n")
                 
                 players_seen.add(player)
             f.write("\n")
