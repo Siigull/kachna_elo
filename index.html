@@ -72,21 +72,22 @@
   </div>
 
   <script>
-    let data; // will hold JSON data
+    let data;  // JSON data
+    let chart; // make chart global
 
-    // Load JSON file
+    // Load JSON
     fetch('data.json')
-      .then(response => response.json())
+      .then(res => res.json())
       .then(json => {
-        data = json; // assign JSON content to variable
-        initialize(); // initialize list and chart after loading
+        data = json;
+        initialize();
       })
       .catch(err => console.error("Failed to load JSON:", err));
 
     function initialize() {
       const list = document.getElementById('player-list');
 
-      // Populate clickable player grid
+      // Populate player grid
       data.forEach((playerEntry, index) => {
         const [name, info] = playerEntry;
         const div = document.createElement('div');
@@ -96,10 +97,10 @@
         list.appendChild(div);
       });
 
-      // Initialize Chart.js
+      // Initialize chart (global now)
       const ctx = document.getElementById('eloChart').getContext('2d');
       const firstPlayer = data[0];
-      let chart = new Chart(ctx, {
+      chart = new Chart(ctx, {
         type: 'line',
         data: {
           labels: firstPlayer[1].game_hist.map((_, i) => `Game ${i+1}`),
