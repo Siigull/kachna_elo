@@ -48,12 +48,13 @@
 
     /* Right side: chart */
     #chart-container {
-      flex: 1; /* takes the remaining ~1/3 */
+      flex: 0 0 45%;  /* ~1/3 of the width */
+      max-width: 420px; /* optional: limit absolute max */
       position: sticky;
       top: 20px;
       box-sizing: border-box;
     }
-    
+
     canvas {
       width: 100% !important;  /* expand chart to container width */
       height: auto !important; /* keep proportions */
