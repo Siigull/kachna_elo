@@ -91,6 +91,19 @@
     #game-history li {
       padding: 5px;
       border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between; /* text left, link right */
+      align-items: center;
+    }
+
+    .tournament-link {
+      font-size: 12px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .tournament-link:hover {
+      text-decoration: underline;
     }
 
     #game-history li:last-child {
@@ -192,28 +205,29 @@
       const historyList = document.getElementById('history-list');
       historyList.innerHTML = ''; // clear old list
 
-      info.game_hist.forEach((game, i) => {
+      info.game_hist.forEach((game) => {
         const li = document.createElement('li');
+
         const opponent = game[0];
         const elo = game[1].toFixed(1);
         const color = game[2];
         const url = game[3];
 
         // Match text
-        let matchText = (color === "white")
+        const matchSpan = document.createElement('span');
+        matchSpan.textContent = (color === "white")
           ? `${name} vs ${opponent} → ${elo}`
           : `${opponent} vs ${name} → ${elo}`;
+        li.appendChild(matchSpan);
 
-        // Tournament link (if present)
+        // Tournament link
         if (url) {
           const link = document.createElement('a');
           link.href = url;
-          link.textContent = " [Tournament]";
-          link.target = "_blank"; // open in new tab
-          li.textContent = matchText;
+          link.textContent = "Tournament";
+          link.target = "_blank";
+          link.className = "tournament-link";
           li.appendChild(link);
-        } else {
-          li.textContent = matchText;
         }
 
         historyList.appendChild(li);
