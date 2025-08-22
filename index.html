@@ -18,7 +18,7 @@
   <ul id="player-list"></ul>
 
   <h2>ELO Progression</h2>
-  <canvas id="eloChart" width="400" height="300"></canvas>
+  <canvas id="eloChart" width="900" height="900"></canvas>
 
   <script>
     let data; // will hold JSON data
@@ -47,7 +47,7 @@
       // Initialize Chart.js with first player
       const ctx = document.getElementById('eloChart').getContext('2d');
       const firstPlayer = data[0];
-      window.chart = new Chart(ctx, {
+      let chart = new Chart(ctx, {
         type: 'line',
         data: {
           labels: firstPlayer[1].game_hist.map((_, i) => `Game ${i+1}`),
@@ -60,6 +60,18 @@
         },
         options: {
           responsive: false,
+          plugins: {
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const playerIndex = data.findIndex(p => `${p[0]} ELO` === context.dataset.label);
+                  const opponent = data[playerIndex][1].game_hist[context.dataIndex][0];
+                  const elo = context.raw;
+                  return `${opponent}: ${elo.toFixed(1)}`;
+                }
+              }
+            }
+          },
           scales: { y: { beginAtZero: false } }
         }
       });
