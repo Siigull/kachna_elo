@@ -72,57 +72,62 @@
   </div>
 
   <script>
-    const data = [
-      ["Rysanek Jakub", {"elo": 1351.487, "game_hist": [["Juhasz Tomas", 1020], ["Dornak Jakub", 1040], ["Durica Adam", 1040]]}],
-      ["Batora Matej", {"elo": 1263.876, "game_hist": [["Do Hung", 1020], ["Jezek Jakub", 1040], ["Siska Kristof", 1020]]}],
-      ["Magnus Carlsen", {"elo": 2862, "game_hist": [["Opponent A", 2800], ["Opponent B", 2820], ["Opponent C", 2850]]}],
-      ["Hikaru Nakamura", {"elo": 2736, "game_hist": [["Opponent X", 2700], ["Opponent Y", 2710], ["Opponent Z", 2730]]}],
-      ["Alireza Firouzja", {"elo": 2793, "game_hist": [["Opponent 1", 2750], ["Opponent 2", 2760], ["Opponent 3", 2780]]}]
-    ];
+    let data; // will hold JSON data
 
-    const list = document.getElementById('player-list');
+    // Load JSON file
+    fetch('data.json')
+      .then(response => response.json())
+      .then(json => {
+        data = json; // assign JSON content to variable
+        initialize(); // initialize list and chart after loading
+      })
+      .catch(err => console.error("Failed to load JSON:", err));
 
-    // Populate clickable player grid
-    data.forEach((playerEntry, index) => {
-      const [name, info] = playerEntry;
-      const div = document.createElement('div');
-      div.className = 'player-card';
-      div.textContent = `${name}: ${info.elo.toFixed(1)}`;
-      div.addEventListener('click', () => updateChart(index));
-      list.appendChild(div);
-    });
+    function initialize() {
+      const list = document.getElementById('player-list');
 
-    // Initialize Chart.js
-    const ctx = document.getElementById('eloChart').getContext('2d');
-    const firstPlayer = data[0];
-    let chart = new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels: firstPlayer[1].game_hist.map((_, i) => `Game ${i+1}`),
-        datasets: [{
-          label: `${firstPlayer[0]} ELO`,
-          data: firstPlayer[1].game_hist.map(game => game[1]),
-          borderColor: 'blue',
-          fill: false
-        }]
-      },
-      options: {
-        responsive: false,
-        plugins: {
-          tooltip: {
-            callbacks: {
-              label: function(context) {
-                const playerIndex = data.findIndex(p => `${p[0]} ELO` === context.dataset.label);
-                const opponent = data[playerIndex][1].game_hist[context.dataIndex][0];
-                const elo = context.raw;
-                return `${opponent}: ${elo.toFixed(1)}`;
+      // Populate clickable player grid
+      data.forEach((playerEntry, index) => {
+        const [name, info] = playerEntry;
+        const div = document.createElement('div');
+        div.className = 'player-card';
+        div.textContent = `${name}: ${info.elo.toFixed(1)}`;
+        div.addEventListener('click', () => updateChart(index));
+        list.appendChild(div);
+      });
+
+      // Initialize Chart.js
+      const ctx = document.getElementById('eloChart').getContext('2d');
+      const firstPlayer = data[0];
+      let chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: firstPlayer[1].game_hist.map((_, i) => `Game ${i+1}`),
+          datasets: [{
+            label: `${firstPlayer[0]} ELO`,
+            data: firstPlayer[1].game_hist.map(game => game[1]),
+            borderColor: 'blue',
+            fill: false
+          }]
+        },
+        options: {
+          responsive: false,
+          plugins: {
+            tooltip: {
+              callbacks: {
+                label: function(context) {
+                  const playerIndex = data.findIndex(p => `${p[0]} ELO` === context.dataset.label);
+                  const opponent = data[playerIndex][1].game_hist[context.dataIndex][0];
+                  const elo = context.raw;
+                  return `${opponent}: ${elo.toFixed(1)}`;
+                }
               }
             }
-          }
-        },
-        scales: { y: { beginAtZero: false } }
-      }
-    });
+          },
+          scales: { y: { beginAtZero: false } }
+        }
+      });
+    }
 
     function updateChart(playerIndex) {
       const [name, info] = data[playerIndex];
