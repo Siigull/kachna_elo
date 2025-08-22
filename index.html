@@ -15,18 +15,31 @@
       margin-bottom: 20px;
     }
 
-    /* Two-column layout */
     #container {
       display: flex;
       gap: 20px;
     }
 
-    /* Left side: player grid */
+    /* Left side: player grid - 70% */
     #player-list {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 10px;
-      flex: 1;
+      flex: 7; /* 70% */
+    }
+
+    /* Right side: chart - 30% */
+    #chart-container {
+      flex: 3; /* 30% */
+      position: sticky;
+      top: 20px;
+    }
+
+    /* Make canvas fill the container width */
+    canvas {
+      width: 100% !important;
+      height: auto !important;
+      max-height: 300px;
     }
 
     .player-card {
@@ -38,24 +51,12 @@
       transition: background 0.2s, transform 0.2s;
       user-select: none;
     }
-
+    
     .player-card:hover {
       background: #d0e0ff;
       transform: scale(1.05);
     }
-
-    /* Right side: chart */
-    #chart-container {
-      width: 80%; /* small fixed width */
-      position: sticky;   /* stick within the viewport */
-      top: 20px;          /* always 20px from top when scrolling */
-      align-self: flex-start;
-    }
-
-    canvas {
-      max-width: 80%;
-    }
-  </style>
+    </style>
 </head>
 <body>
   <h1>Chess Players ELO</h1>
