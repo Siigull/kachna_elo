@@ -32,21 +32,20 @@
 
     /* Right side: chart - 30% */
     #chart-container {
-      flex: 5; /* still 30% of total width */
-      position: sticky;
-      top: 20px;
-
-      /* Center the canvas inside */
+      flex: 3;              /* 30% width */
       display: flex;
-      justify-content: center; /* horizontal center */
+      justify-content: center; /* horizontal centering */
+      align-items: flex-start; /* align to top, so sticky works */
+      position: sticky;
+      top: 20px;            /* sticks 20px from the top */
+      height: fit-content;  /* shrink-wrap to chart size */
     }
-
     /* Smaller chart */
     canvas {
       width: 80% !important;   /* shrink relative to container */
       height: 80% !important;
-      max-width: 400px;        /* optional cap */
-      max-height: 300px;       /* optional cap */
+      max-width: 500px;        /* optional cap */
+      max-height: 400px;       /* optional cap */
     }
 
     .player-card {
@@ -74,7 +73,7 @@
 
     <!-- Chart on the right -->
     <div id="chart-container">
-      <canvas id="eloChart" width="400" height="300"></canvas>
+      <canvas id="eloChart" width="500" height="400"></canvas>
     </div>
   </div>
 
