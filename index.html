@@ -19,6 +19,7 @@
     #container {
       display: flex;
       gap: 20px;
+      height: 100%; /* optional, full viewport height */
     }
 
     /* Left side: player grid - 70% */
@@ -26,19 +27,23 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       gap: 10px;
-      flex: 5; /* 70% */
+      flex: 7; /* 70% */
     }
 
     /* Right side: chart - 30% */
     #chart-container {
-      flex: 4; /* 30% */
+      flex: 3; /* 30% */
       position: sticky;
       top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
     }
 
-    /* Remove width/height CSS from canvas */
+    /* Make canvas fill the container */
     canvas {
-      display: block;
+      width: 100% !important;
+      height: 100% !important;
     }
 
     .player-card {
@@ -100,33 +105,34 @@
       const ctx = document.getElementById('eloChart').getContext('2d');
       const firstPlayer = data[0];
       chart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: firstPlayer[1].game_hist.map((_, i) => `Game ${i+1}`),
-          datasets: [{
-            label: `${firstPlayer[0]} ELO`,
-            data: firstPlayer[1].game_hist.map(game => game[1]),
-            borderColor: 'blue',
-            fill: false
-          }]
-        },
-        options: {
-          responsive: false,
-          plugins: {
-            tooltip: {
-              callbacks: {
-                label: function(context) {
-                  const playerIndex = data.findIndex(p => `${p[0]} ELO` === context.dataset.label);
-                  const opponent = data[playerIndex][1].game_hist[context.dataIndex][0];
-                  const elo = context.raw;
-                  return `${opponent}: ${elo.toFixed(1)}`;
-                }
+      type: 'line',
+      data: {
+        labels: firstPlayer[1].game_hist.map((_, i) => `Game ${i+1}`),
+        datasets: [{
+          label: `${firstPlayer[0]} ELO`,
+          data: firstPlayer[1].game_hist.map(game => game[1]),
+          borderColor: 'blue',
+          fill: false
+        }]
+      },
+      options: {
+        responsive: true,   // Chart fills container
+        maintainAspectRatio: false, // Allow stretching to container
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: function(context) {
+                const playerIndex = data.findIndex(p => `${p[0]} ELO` === context.dataset.label);
+                const opponent = data[playerIndex][1].game_hist[context.dataIndex][0];
+                const elo = context.raw;
+                return `${opponent}: ${elo.toFixed(1)}`;
               }
             }
-          },
-          scales: { y: { beginAtZero: false } }
-        }
-      });
+          }
+        },
+        scales: { y: { beginAtZero: false } }
+      }
+    });
     }
 
     function updateChart(playerIndex) {
