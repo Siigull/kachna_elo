@@ -120,7 +120,7 @@
     <div id="chart-container">
       <canvas id="eloChart" width="500" height="400"></canvas>
       <div id="game-history">
-        <h2>Game History</h2>
+        <h2>Seznam zápasů</h2>
         <ul id="history-list"></ul>
       </div>
     </div>
@@ -161,7 +161,7 @@
       chart = new Chart(ctx, {
         type: 'line',
         data: {
-          labels: firstPlayer[1].game_hist.map((_, i) => `Game ${i+1}`),
+          labels: firstPlayer[1].game_hist.map((_, i) => `Hra ${i+1}`),
           datasets: [{
             label: `${firstPlayer[0]} ELO`,
             data: firstPlayer[1].game_hist.map(game => game[1]),
