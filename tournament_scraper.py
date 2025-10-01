@@ -34,7 +34,8 @@ urls = ["https://s2.chess-results.com/tnrWZ.aspx?lan=4&art=4&turdet=YES&SNode=S0
         "https://s2.chess-results.com/tnrWZ.aspx?lan=5&art=4&turdet=YES&SNode=S0&tno=903949",
         "https://s3.chess-results.com/tnrWZ.aspx?lan=5&art=4&turdet=YES&SNode=S0&tno=1036014",
         "https://s1.chess-results.com/tnrWZ.aspx?lan=4&art=4&SNode=S0&tno=1129686",
-        "https://s3.chess-results.com/tnrWZ.aspx?lan=1&art=4&turdet=NO&SNode=S0&tno=1159152"]
+        "https://s3.chess-results.com/tnrWZ.aspx?lan=1&art=4&turdet=NO&SNode=S0&tno=1159152",
+        "https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0"]
 
 output_file = "tournament_games.txt"
 

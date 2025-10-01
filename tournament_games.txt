@@ -620,3 +620,134 @@ Penas Jakub;Kromp Milos;0;https://s3.chess-results.com/tnrWZ.aspx?lan=1&art=4&tu
 Doshin Nikita;Kvapil Jan;1.0;https://s3.chess-results.com/tnrWZ.aspx?lan=1&art=4&turdet=NO&SNode=S0&tno=1159152
 Varsanyi Adam;Radimsky Simon;0.5;https://s3.chess-results.com/tnrWZ.aspx?lan=1&art=4&turdet=NO&SNode=S0&tno=1159152
 
+Shelest Oleksii;Gardon Lukas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Cernicky Martin;Richterova Natasa;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Jordanov Mihail;Radimsky Simon;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+John Matyas;Huska Jan;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Petricek Lukas;Doubrava Tomas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Synek Jaroslav;Postelga Aleksander;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Foltyn Tomas;Turis Ondrej;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Holba Josef;Lastovica Martin;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Stach Jonas;Dolezal Samuel;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Vyplel Simon;Kotora Marko;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Krena Bohuslav;Heckelmoser Marek;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Novak David;Chovan Samuel;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Gartner Mikulas;Pelanek Daniel;0.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Tran Qui Sang;Smajzrova Dominika;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Kuznik Jakub;Vitek Tomas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Penas Jakub;Rapavy Marek;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Hamadej Jakub;Stastna Martina;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Radsetoulal Vlastimil;Takacs Martin;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+
+Smajzrova Dominika;Shelest Oleksii;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Richterova Natasa;Synek Jaroslav;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Chovan Samuel;Jordanov Mihail;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Huska Jan;Stach Jonas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Rapavy Marek;Petricek Lukas;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Turis Ondrej;Radsetoulal Vlastimil;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Zeman Radek;Holba Josef;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Kotora Marko;Krena Bohuslav;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Lastovica Martin;Gartner Mikulas;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Stastna Martina;Kuznik Jakub;1;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Dolezal Samuel;John Matyas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Postelga Aleksander;Foltyn Tomas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Doubrava Tomas;Penas Jakub;0.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Pelanek Daniel;Cernicky Martin;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Radimsky Simon;Novak David;0.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Gardon Lukas;Tran Qui Sang;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Heckelmoser Marek;Vyplel Simon;0.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Takacs Martin;Hamadej Jakub;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+
+Shelest Oleksii;Pelanek Daniel;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Huska Jan;Richterova Natasa;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Jordanov Mihail;Stastna Martina;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Petricek Lukas;Kotora Marko;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Synek Jaroslav;Takacs Martin;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Holba Josef;Turis Ondrej;1;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Stach Jonas;Rapavy Marek;0.5;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Krena Bohuslav;Novak David;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Penas Jakub;Chovan Samuel;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Gartner Mikulas;Postelga Aleksander;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Vyplel Simon;Smajzrova Dominika;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Kuznik Jakub;Zeman Radek;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Tran Qui Sang;Dolezal Samuel;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+John Matyas;Doubrava Tomas;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Vitek Tomas;Radsetoulal Vlastimil;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Hamadej Jakub;Radimsky Simon;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Cernicky Martin;Gardon Lukas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Foltyn Tomas;Heckelmoser Marek;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+
+Richterova Natasa;Shelest Oleksii;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Petricek Lukas;Jordanov Mihail;1;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Smajzrova Dominika;Huska Jan;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Pelanek Daniel;Synek Jaroslav;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Turis Ondrej;Dolezal Samuel;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Stastna Martina;Holba Josef;0.5;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Radimsky Simon;Stach Jonas;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Kotora Marko;Gartner Mikulas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Radsetoulal Vlastimil;Krena Bohuslav;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Chovan Samuel;Kuznik Jakub;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Postelga Aleksander;Cernicky Martin;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Doubrava Tomas;Tran Qui Sang;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Rapavy Marek;Lastovica Martin;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Novak David;Vyplel Simon;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Takacs Martin;Penas Jakub;1;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Zeman Radek;Foltyn Tomas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Heckelmoser Marek;Vitek Tomas;1;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Gardon Lukas;Hamadej Jakub;0.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+
+Shelest Oleksii;Petricek Lukas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Holba Josef;Richterova Natasa;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Jordanov Mihail;Kotora Marko;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Huska Jan;Turis Ondrej;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Synek Jaroslav;Rapavy Marek;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Stach Jonas;Stastna Martina;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Krena Bohuslav;Chovan Samuel;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Gartner Mikulas;Doubrava Tomas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Smajzrova Dominika;Zeman Radek;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Kuznik Jakub;Pelanek Daniel;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Dolezal Samuel;Heckelmoser Marek;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Hamadej Jakub;Postelga Aleksander;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Novak David;Radsetoulal Vlastimil;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Penas Jakub;Radimsky Simon;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Cernicky Martin;Tran Qui Sang;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Vitek Tomas;John Matyas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Lastovica Martin;Vyplel Simon;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Foltyn Tomas;Gardon Lukas;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+
+Jordanov Mihail;Shelest Oleksii;0.5;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Richterova Natasa;Krena Bohuslav;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Holba Josef;Huska Jan;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Petricek Lukas;Synek Jaroslav;0.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Turis Ondrej;Stach Jonas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Chovan Samuel;Kotora Marko;1;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Radsetoulal Vlastimil;Gartner Mikulas;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Postelga Aleksander;Smajzrova Dominika;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Dolezal Samuel;Kuznik Jakub;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Doubrava Tomas;Vitek Tomas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Stastna Martina;Rapavy Marek;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Pelanek Daniel;John Matyas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Radimsky Simon;Lastovica Martin;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Zeman Radek;Cernicky Martin;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Heckelmoser Marek;Novak David;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Gardon Lukas;Penas Jakub;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Tran Qui Sang;Hamadej Jakub;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Vyplel Simon;Foltyn Tomas;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+
+Shelest Oleksii;Huska Jan;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Gartner Mikulas;Richterova Natasa;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Synek Jaroslav;Jordanov Mihail;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Krena Bohuslav;Petricek Lukas;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Kuznik Jakub;Turis Ondrej;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Rapavy Marek;Holba Josef;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Stach Jonas;Chovan Samuel;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Kotora Marko;Pelanek Daniel;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Novak David;Dolezal Samuel;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Postelga Aleksander;Radimsky Simon;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Cernicky Martin;Doubrava Tomas;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Heckelmoser Marek;Stastna Martina;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Penas Jakub;Vyplel Simon;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Hamadej Jakub;Zeman Radek;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+Vitek Tomas;Tran Qui Sang;1.0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+John Matyas;Gardon Lukas;0;https://s2.chess-results.com/tnr1258606.aspx?lan=5&art=4&SNode=S0
+
