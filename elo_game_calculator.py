@@ -12,12 +12,18 @@ for index, value in df.iterrows():
         players[value["black"]] = {"elo": 1000, "game_hist": []}
 
 for index, [white, black, result, game_url] in df.iterrows():
-    res = float(result)
-    dif = 1 / (1 + 10**((players[white]["elo"] - players[black]["elo"]) / 400))
-    elo_calc = 40 * (res - dif)
-    players[white]["elo"] += elo_calc
+    K = 40
+
+    score_white = float(result)
+    score_black = 1 - score_white
+    
+    expected_white = 1 / (1 + 10**((players[black]["elo"] - players[white]["elo"]) / 400))
+    expected_black = 1 - expected_white
+
+    players[white]["elo"] += K * (score_white - expected_white)
+    players[black]["elo"] += K * (score_black - expected_black)
+
     players[white]["game_hist"].append([black, players[white]["elo"], "white", game_url])
-    players[black]["elo"] -= elo_calc
     players[black]["game_hist"].append([white, players[black]["elo"], "black", game_url])
 
 sorted_players = sorted(players.items(), key=lambda x: x[1]["elo"], reverse=True)
